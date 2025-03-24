@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio Rodante</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+      <header>
+        <div class="left-side">
+            <a href="#"><img src="logo park.jfif" alt="Logo"></a>
+        </div>
+        <nav class="right-side">
+            <div class="nav-link-wrapper"><a href="index.html">Inicio</a></div>
+            <div class="nav-link-wrapper"><a href="mas.info.html">Más información</a></div>
+            <div class="nav-link-wrapper"><a href="quienessomos.html">Quiénes Somos</a></div>
+            <div class="nav-link-wrapper"><a href="login.html">Iniciar Sesión</a></div>
+        </nav>
+    </header> 
+     
+    <div class="container">
+        <div class="form-container sign-in">
+            <form action="#">
+                <h1>Iniciar Sesión</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class='bx bx1-facebook'></i></a>
+                    <a href="#" class="icon"><i class='bx bx1-google'></i></a>
+                    <a href="#" class="icon"><i class='bx bx1-linkedin'></i></a>
+                    <a href="#" class="icon"><i class='bx bx1-github'></i></a>
+                </div>
+                <samp>o usa tu correo electrónico para registrarte</samp>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <a href="#" class="fp">Olvidé mi contraseña</a>
+                <button>Iniciar Sesión</button>
+            </form>
+        </div>
+        <div class="form-container sign-up">
+            <form action="#">
+                <h1>Registrarse</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class='bx bx1-facebook'></i></a>
+                    <a href="#" class="icon"><i class='bx bx1-google'></i></a>
+                    <a href="#" class="icon"><i class='bx bx1-linkedin'></i></a>
+                    <a href="#" class="icon"><i class='bx bx1-github'></i></a>
+                </div>
+                <samp>o usa tu correo electrónico para registrarte</samp>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <button>Registrarse</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Ingresa tus datos personales para continuar</p>
+                    <button class="hidden" id="login">Iniciar Sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Hola, amigo!</h1>
+                    <p>Regístrate con tus datos personales para comenzar</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
