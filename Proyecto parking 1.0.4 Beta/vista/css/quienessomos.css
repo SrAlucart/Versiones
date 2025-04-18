@@ -1,0 +1,550 @@
+
+
+
+/* ======================================TU ALIADO================================== */
+.tu-aliado{
+  text-align: left;
+  padding: 20px;
+  margin-left: 40px;
+  font-family: sans-serif;
+  margin-top: 30px;
+  
+}
+
+.subtitulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: -20px;
+  margin-left: 2px;
+  color: green;
+  font-family: sans-serif;
+}
+
+.titulo {
+  font-size: 62px;
+  font-weight: normal;
+  margin: 10px 0;
+  
+}
+
+.descripcion {
+  font-size: 18px;
+  line-height: 1.5;
+  color: grey;
+  font-weight: 300px;
+  max-width: 600px;
+  word-wrap: break-word;
+  font-weight: normal;
+}
+
+/* =================================NUESTA MISION================================ */
+
+:root {
+  --primary-color: #0a5339;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #0d6e4b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.comentario {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.testimonial-section {
+  width: 45%;
+  height: 310px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 25px;
+
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 1.4;
+  margin-top: 40px;
+}
+
+.client-info {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.mission-section {
+  width: 50%;
+  padding: 20px;
+  margin-bottom: -180px;
+
+}
+
+.section-title {
+  color: var(--accent-color);
+  font-size: 18px;
+  margin-bottom: -10px;
+  
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-left: 0px;
+  font-weight: normal;
+}
+
+.mission-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.quote-circles {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  
+  .testimonial-section, .mission-section {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  
+  .stats-container {
+      flex-wrap: wrap;
+  }
+  
+  .stat-box {
+      width: 50%;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* =====================================FILOSOFIA============================================= */
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.encabezado {
+  margin-bottom: 30px;
+}
+
+.encabezado h1 {
+  font-size: 42px;
+  color: #1a2639;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.encabezado p {
+  font-size: 18px;
+  color: #5d6678;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rejilla-filosofia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: -30px;
+}
+
+.tarjeta-filosofia {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.tarjeta-filosofia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contenedor-icono {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+h2{
+  margin-top: -20px;
+}
+
+.tarjeta-filosofia h2 {
+  font-size: 24px;
+  margin-bottom: 2px;
+  color: #1a2639;
+
+}
+
+.tarjeta-filosofia p {
+  color: #5d6678;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.pie-pagina {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+.pie-pagina img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .rejilla-filosofia {
+    grid-template-columns: 1fr;
+  }
+  
+  .encabezado h1 {
+    font-size: 32px;
+  }
+  
+  .encabezado p {
+    font-size: 16px;
+  }
+}
+
+  
+  /* =============================================FOOTER====================== */
+  .footer {
+    background-color: #33595e; /* Color verde claro */
+    color: #000;
+    padding: 30px 0;
+    margin-top: 40px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 60px;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+
+
+.section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+   
+}
+
+
+.section h3 {
+    margin-top: 0;
+    font-size: 1em;
+  
+   
+  
+}
+
+.section p, .section a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000000;
+
+     
+}
+
+.app-links img {
+    height: 30px;
+    margin-right: 10px;
+    
+}
+
+.social img {
+    height: 30px;
+    margin-left: 10px;
+   
+
+    
+   
+}
+
+.copyright {
+  text-align: left;
+  margin-top: 1px; /* Reduce el margen superior para subir la línea */
+  font-size: 0.9em;
+  border-top: 1px solid grey; /* Aumenta el grosor de la línea */
+  width: 100%; /* Asegura que la línea ocupe todo el ancho */
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .section {
+        flex: 1 1 auto;
+    }
+}
+
+/* Ajustes de hover para enlaces */
+.section a:hover, .app-links a:hover, .social a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre columnas */
+  
+}
+
+.contact {
+  padding-right: 40px; /* Reducido para acercar más el texto a la línea */
+  border-right: 1px solid grey; /* Línea vertical */
+  color: white;
+  
+}
+
+
+.ubicacion {
+  padding-right: 40px; /* Igual que en .contact */
+  border-right: 1px solid grey;
+  padding-left: 75px;
+  color: white;
+  font-size: 16px;
+}
+.legal {
+  color: white;
+  font-size: 16px;
+}
+
+h3{
+  padding-right: 90px;
+  font-size: 16px;
+}
+
+
+.contact p, 
+.contact a,
+.ubicacion p, 
+.ubicacion a,
+.legal p,
+.legal a {
+  font-size: 12px; /* Reduce el tamaño del texto */
+  margin: 4px 0; /* Ajusta los márgenes para reducir el espacio */
+  padding: 3px 4px; /* Ajusta el espaciado interno */
+  padding-left: 10px;
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  color: black;
+}
+
+.contact h3{
+  padding-right: 160px;
+}
+.legal h3{
+  padding-right: 232px;
+}
+
+.legal a {
+  text-decoration: none !important;
+  color: black;
+  
+}
+
+
+.contact p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px; 
+}
+
+
+/* ============================letras que estan adentro de contcato =========== */
+.contact p {
+  display: flex;
+  /* Alinea el icono, el texto y el número en línea */
+  align-items: center;
+  /* Asegura que estén centrados verticalmente */
+  justify-content: space-between;
+  /* Separa el texto del número */
+  width: 110%;
+  /* Asegura que ocupe todo el ancho */
+}
+
+.contact span {
+  flex: 1;
+  /* Hace que el texto ocupe el espacio disponible */
+}
+
+.contact p a,
+.contact p span+span {
+  margin-left: 10px;
+  /* Separa el número del texto */
+}
+
+.contact span {
+  font-weight: bold;
+ 
+}
+
+/* ============================letras que estan adentro de contcato =========== */
+
+
+
+.icon {
+  width: 19px; /* Tamaño pequeño */
+  height: 18px;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  vertical-align: middle;
+}
+
+.icon-social {
+  width: 24px; /* Tamaño más grande para redes sociales */
+  height: 14px;
+  margin-right: 1px;
+}
+
+/* _______________________________________________________________________________________________ */
+/* ________________________________________________________________________ */
+
+
+.hero {
+  background: url('') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
