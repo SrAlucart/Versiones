@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva</title>
+    <link rel="stylesheet" href="vista/css/index.css">
+    <link rel="stylesheet" href="reservadeparqueadero.css">
+   
+</head>
+<body>
+    <div class="form-container">
+        <h1>¡Reserva de parqueadero!</h1>
+        <p>
+            Gracias por elegir <strong>Refugio Rodante</strong> para tus necesidades de estacionamiento. Completa el siguiente formulario con tus datos personales y la información de la reserva. Nos pondremos en contacto contigo para confirmar tu espacio de parqueadero y garantizarte un servicio rápido y confiable.
+        </p>
+        <br><br>
+        <form>
+            <!-- Fila 1 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="documento">NÚMERO DE DOCUMENTO</label>
+                    <input type="text" id="documento" placeholder="Ingresa tu número de documento">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+            </div>
+    
+            <!-- Fila 2 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">TELÉFONO</label>
+                    <input type="text" id="telefono" placeholder="Ingresa tu teléfono">
+                </div>
+            </div>
+    
+            <!-- Fila 3 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="correo">CORREO ELECTRÓNICO</label>
+                    <input type="email" id="correo" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="placa">PLACA DEL VEHÍCULO</label>
+                    <input type="text" id="placa" placeholder="Ingresa la placa del vehículo">
+                </div>
+            </div>
+    
+            <!-- Fila 4 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tipo-vehiculo">TIPO DE VEHÍCULO</label>
+                    <select id="tipo-vehiculo">
+                        <option value="auto">Auto</option>
+                        <option value="moto">Moto</option>
+                        <option value="camioneta">Camioneta</option>
+                        <option value="camion">Camión</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-parqueadero">TIPO DE PARQUEADERO</label>
+                    <select id="tipo-parqueadero">
+                        <option value="cubierto">Cubierto</option>
+                        <option value="descubierto">Descubierto</option>
+                        <option value="privado">Privado</option>
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Botón de envío -->
+            <div class="form-row">
+                <button type="submit" class="btn">Enviar Reserva</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Refugio Rodante. Todos los derechos reservados.</p>
+            <p><a href="index.php?pagina=contacto">Contáctanos</a> | <a href="index.php?pagina=politicas">Políticas de Privacidad</a></p>
+        </div>
+    
+    
+</body>
+</html>

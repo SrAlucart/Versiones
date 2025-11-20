@@ -1,0 +1,412 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+header .left-side img {
+    width: 80px;
+    height: auto;
+}
+
+
+header .right-side {
+    display: flex;
+}
+
+
+header .right-side .nav-link-wrapper {
+    margin-left: 20px;
+}
+
+
+header .right-side .nav-link-wrapper a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Viga', sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.navbar .dropdown {
+    position: relative;
+    margin: 0 70px;
+}
+
+
+.navbar .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+ 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 20px;
+}
+
+
+.navbar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.navbar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* =====================================informacion======================================= */
+
+
+.informacion {
+  display: flex;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.info {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.info h2 {
+  color: #29b6f6;
+  font-size: 24px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.info img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.formulario {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el checkbox y el texto */
+  margin-top: 10px; /* Espacio con el formulario */
+  font-size: 14px; /* Ajuste de tamaño del texto */
+  color: #333; /* Color de texto más oscuro para mejor visibilidad */
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-container a {
+  color: #29b6f6; /* Color verde para el enlace */
+  text-decoration: none; /* Quitar subrayado */
+  font-weight: bold;
+}
+
+.checkbox-container a:hover {
+  text-decoration: none; /* Subrayado al pasar el mouse */
+}
+
+
+button {
+  background-color: #29b6f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #29b6f6;
+}
+
+
+
+  /* =============================================FOOTER====================== */
+  .footer {
+    background-color: #4fc3f7; 
+    color: #000;
+    padding: 30px 0;
+    margin-top: 40px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+
+
+.section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+   
+}
+
+
+.section h3 {
+    margin-top: 0;
+    font-size: 1em;
+  
+   
+  
+}
+
+.section p, .section a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000000;
+
+     
+}
+
+.app-links img {
+    height: 30px;
+    margin-right: 10px;
+    
+}
+
+.social img {
+    height: 30px;
+    margin-left: 10px;
+    
+   
+}
+
+.copyright {
+  text-align: left;
+  margin-top: 1px; /* Reduce el margen superior para subir la línea */
+  font-size: 0.9em;
+  border-top: 1px solid grey; /* Aumenta el grosor de la línea */
+  width: 100%; /* Asegura que la línea ocupe todo el ancho */
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .section {
+        flex: 1 1 auto;
+    }
+}
+
+/* Ajustes de hover para enlaces */
+.section a:hover, .app-links a:hover, .social a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre columnas */
+  
+}
+
+.contact {
+  padding-right: 40px; /* Reducido para acercar más el texto a la línea */
+  border-right: 1px solid grey; /* Línea vertical */
+  color: white;
+  
+}
+
+
+.ubicacion {
+  padding-right: 40px; /* Igual que en .contact */
+  border-right: 1px solid grey;
+  padding-left: 75px;
+  color: white;
+  font-size: 16px;
+}
+.legal {
+  color: white;
+  font-size: 16px;
+}
+
+h3{
+  padding-right: 90px;
+  font-size: 16px;
+}
+
+
+.contact p, 
+.contact a,
+.ubicacion p, 
+.ubicacion a,
+.legal p,
+.legal a {
+  font-size: 12px; /* Reduce el tamaño del texto */
+  margin: 4px 0; /* Ajusta los márgenes para reducir el espacio */
+  padding: 3px 4px; /* Ajusta el espaciado interno */
+  padding-left: 10px;
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  color: black;
+}
+
+.contact h3{
+  padding-right: 160px;
+}
+.legal h3{
+  padding-right: 232px;
+}
+
+.legal a {
+  text-decoration: none !important;
+  color: black;
+  
+}
+
+
+.contact p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px; 
+}
+
+
+/* ============================letras que estan adentro de contcato =========== */
+.contact p {
+  display: flex;
+  /* Alinea el icono, el texto y el número en línea */
+  align-items: center;
+  /* Asegura que estén centrados verticalmente */
+  justify-content: space-between;
+  /* Separa el texto del número */
+  width: 110%;
+  /* Asegura que ocupe todo el ancho */
+}
+
+.contact span {
+  flex: 1;
+  /* Hace que el texto ocupe el espacio disponible */
+}
+
+.contact p a,
+.contact p span+span {
+  margin-left: 10px;
+  /* Separa el número del texto */
+}
+
+.contact span {
+  font-weight: bold;
+ 
+}
+
+/* ============================letras que estan adentro de contcato =========== */
+
+
+
+.icon {
+  width: 19px; /* Tamaño pequeño */
+  height: 18px;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  vertical-align: middle;
+}
+
+.icon-social {
+  width: 24px; /* Tamaño más grande para redes sociales */
+  height: 14px;
+  margin-right: 1px;
+}
+
+/* _______________________________________________________________________________________________ */
+/* ________________________________________________________________________ */
+

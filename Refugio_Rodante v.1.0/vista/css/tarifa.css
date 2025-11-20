@@ -1,0 +1,39 @@
+.tarifa {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  h1 {
+    color: #333;
+  }
+ 
+  p {
+    color: #666;
+  }
+ 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+ 
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+ 
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+ 
+  th {
+    background-color: #f4f4f4;
+  }
+ 
+  em {
+    font-size: 0.9em;
+    color: #999;
+  }
+
