@@ -6,7 +6,8 @@ use App\Http\Controllers\ParkingController;
 use App\Http\Controllers\ParqueaderoController;
 use App\Http\Controllers\ReservaController;
 use App\Http\Controllers\UsuarioController;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 /*
 |--------------------------------------------------------------------------
 | RUTAS DE AUTENTICACIÓN
@@ -57,6 +58,22 @@ Route::middleware(['auth', 'rol:admin'])->group(function () {
     Route::delete('/admin/usuarios/{id}', [UsuarioController::class, 'destroy'])
         ->name('usuarios.destroy');
 });
+
+
+
+Route::get('/cron/finalizar-reservas', function (Request $request) {
+
+    // Validar token
+    if ($request->token !== env('CRON_TOKEN')) {
+        abort(401, 'Unauthorized');
+    }
+
+    // Ejecutar comando
+    Artisan::call('reservas:finalizar');
+
+    return "OK - Reservas finalizadas";
+});
+
 
 
 /*

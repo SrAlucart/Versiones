@@ -24,24 +24,31 @@ public function create(Request $request)
 }
 
     // 👉 Cargar espacios disponibles para el SELECT
-public function espaciosPorParqueadero($id)
+public function espaciosPorParqueadero(Request $request, $id)
 {
-    // Obtener todos los espacios del parqueadero
-    $espacios = EspacioParqueadero::where('parqueadero_id', $id)->get();
+    $fechaInicio = $request->query('fecha_inicio');
+    $fechaFin = $request->query('fecha_fin');
 
-    // Filtrar solo los disponibles
-    $espaciosDisponibles = $espacios->filter(function ($espacio) {
-        $reservaActiva = Reserva::where('espacio_id', $espacio->id)
-            ->where('estado', 'confirmada')
-            ->where('fecha_inicio', '<=', now())
-            ->where('fecha_fin', '>=', now())
-            ->exists();
+    if (!$fechaInicio || !$fechaFin) {
+        $now = now();
+        $fechaInicio = $now->format('Y-m-d H:i:s');
+        $fechaFin = $now->copy()->addHour()->format('Y-m-d H:i:s');
+    } else {
+        $fechaInicio = str_replace('T', ' ', $fechaInicio);
+        $fechaFin = str_replace('T', ' ', $fechaFin);
+    }
 
-        return !$reservaActiva; // si NO tiene reserva activa → disponible
-    })->values();
+    $espaciosDisponibles = EspacioParqueadero::where('parqueadero_id', $id)
+        ->whereDoesntHave('reservas', function ($q) use ($fechaInicio, $fechaFin) {
+            $q->whereIn('estado', ['pendiente', 'confirmada'])
+              ->where('fecha_inicio', '<', $fechaFin)
+              ->where('fecha_fin', '>', $fechaInicio);
+        })
+        ->get();
 
     return response()->json($espaciosDisponibles);
 }
+
 
 
 public function guardar(Request $request)

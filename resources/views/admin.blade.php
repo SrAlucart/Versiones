@@ -26,7 +26,6 @@
             </div>
         </div>
         <nav id="nav-menu" class="nav-links">
-            <div class="nav-link-wrapper"><a href="/inde">Inicio</a></div>
             <div class="nav-link-wrapper"><a href="/configuracion" class="text-warning">Panel Admin</a></div>
             <div class="nav-link-wrapper"><a href="/logout">Cerrar Sesión</a></div>
         </nav>
