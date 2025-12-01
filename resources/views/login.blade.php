@@ -229,7 +229,6 @@
                     <label for="tipoUsuario">Tipo de Usuario:</label>
                     <select id="tipoUsuario" name="tipoUsuario">
                         <option value="usuario">Usuario</option>
-                        <option value="admin">Administrador</option>
                     </select>
                     <input type="text" name="Nombre" placeholder="Nombre" required>
                     <input type="text" name="Apellido" placeholder="Apellido" required>
